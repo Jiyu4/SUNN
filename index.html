@@ -126,10 +126,10 @@
             position: absolute;
             inset: 0;
             background: linear-gradient(180deg,
-                    rgba(10, 14, 23, 0.85) 0%,
-                    rgba(10, 14, 23, 0.6) 40%,
-                    rgba(10, 14, 23, 0.3) 70%,
-                    rgba(10, 14, 23, 0.8) 100%);
+                    rgba(10, 14, 23, 0.95) 0%,
+                    rgba(10, 14, 23, 0.85) 30%,
+                    rgba(10, 14, 23, 0.75) 60%,
+                    rgba(10, 14, 23, 0.92) 100%);
         }
 
         /* Animated Background Base */
@@ -1231,9 +1231,9 @@
         }
 
         .countdown-item {
-            background: rgba(10, 14, 23, 0.85);
+            background: rgba(10, 14, 23, 0.95);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 16px;
             padding: 24px 32px;
             text-align: center;
@@ -1301,12 +1301,14 @@
             padding: 120px 48px;
             max-width: 1400px;
             margin: 0 auto;
-            background: transparent !important;
+            background: rgba(10, 14, 23, 0.7) !important;
+            border-radius: 24px;
+            margin-bottom: 40px;
         }
 
         .section-full {
             padding: 120px 48px;
-            background: transparent !important;
+            background: rgba(10, 14, 23, 0.5) !important;
         }
 
         .section-header {
@@ -1354,9 +1356,9 @@
         }
 
         .card {
-            background: rgba(10, 14, 23, 0.85);
+            background: rgba(10, 14, 23, 0.95);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 24px;
             padding: 40px;
             transition: all 0.4s ease;
@@ -1378,9 +1380,9 @@
 
         .card:hover {
             transform: translateY(-8px);
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(245, 158, 11, 0.3);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            background: rgba(15, 23, 42, 0.98);
+            border-color: rgba(245, 158, 11, 0.4);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
         }
 
         .card:hover::before {
@@ -1484,13 +1486,14 @@
             transition: all 0.4s ease;
             cursor: pointer;
             border: 1px solid transparent;
+            backdrop-filter: blur(10px);
         }
 
         .track-card::before {
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), transparent);
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), transparent);
             opacity: 0;
             transition: opacity 0.3s;
         }
@@ -1504,8 +1507,8 @@
         }
 
         .track-card.science {
-            background: linear-gradient(145deg, #0c1929, #1a2744);
-            border-color: rgba(59, 130, 246, 0.2);
+            background: linear-gradient(145deg, rgba(12, 25, 41, 0.95), rgba(26, 39, 68, 0.95));
+            border-color: rgba(59, 130, 246, 0.3);
         }
 
         .track-card.science:hover {
@@ -1514,33 +1517,33 @@
         }
 
         .track-card.tech {
-            background: linear-gradient(145deg, #0c1a29, #1a3a44);
-            border-color: rgba(6, 182, 212, 0.2);
+            background: linear-gradient(145deg, rgba(12, 26, 41, 0.95), rgba(26, 58, 68, 0.95));
+            border-color: rgba(6, 182, 212, 0.3);
         }
 
         .track-card.tech:hover {
             border-color: var(--cyan);
-            box-shadow: 0 20px 60px rgba(6, 182, 212, 0.2);
+            box-shadow: 0 20px 60px rgba(6, 182, 212, 0.3);
         }
 
         .track-card.edu {
-            background: linear-gradient(145deg, #0c291a, #1a4429);
-            border-color: rgba(34, 197, 94, 0.2);
+            background: linear-gradient(145deg, rgba(12, 41, 26, 0.95), rgba(26, 68, 41, 0.95));
+            border-color: rgba(34, 197, 94, 0.3);
         }
 
         .track-card.edu:hover {
             border-color: #22c55e;
-            box-shadow: 0 20px 60px rgba(34, 197, 94, 0.2);
+            box-shadow: 0 20px 60px rgba(34, 197, 94, 0.3);
         }
 
         .track-card.mgmt {
-            background: linear-gradient(145deg, #291a0c, #44391a);
-            border-color: rgba(245, 158, 11, 0.2);
+            background: linear-gradient(145deg, rgba(41, 26, 12, 0.95), rgba(68, 57, 26, 0.95));
+            border-color: rgba(245, 158, 11, 0.3);
         }
 
         .track-card.mgmt:hover {
             border-color: var(--gold);
-            box-shadow: 0 20px 60px rgba(245, 158, 11, 0.2);
+            box-shadow: 0 20px 60px rgba(245, 158, 11, 0.3);
         }
 
         .track-icon {
@@ -1733,17 +1736,18 @@
         }
 
         .speaker-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(10, 14, 23, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 24px;
             overflow: hidden;
             transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
         }
 
         .speaker-card:hover {
             transform: translateY(-8px);
-            border-color: rgba(245, 158, 11, 0.3);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border-color: rgba(245, 158, 11, 0.4);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
         }
 
         .speaker-avatar {
@@ -1856,16 +1860,16 @@
             grid-template-columns: 120px 1fr auto;
             gap: 24px;
             padding: 28px 32px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(10, 14, 23, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 16px;
             transition: all 0.3s ease;
             align-items: center;
         }
 
         .schedule-item:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(59, 130, 246, 0.3);
+            background: rgba(15, 23, 42, 0.95);
+            border-color: rgba(59, 130, 246, 0.4);
             transform: translateX(8px);
         }
 
@@ -1947,12 +1951,13 @@
         }
 
         .facility-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(10, 14, 23, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 20px;
             padding: 32px;
             text-align: center;
             transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
         }
 
         .facility-card:hover {
@@ -1985,11 +1990,12 @@
         }
 
         .transport-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(10, 14, 23, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 20px;
             padding: 32px;
             transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
         }
 
         .transport-card:hover {
@@ -2039,17 +2045,18 @@
         }
 
         .hotel-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(10, 14, 23, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 20px;
             padding: 32px;
             transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
         }
 
         .hotel-card:hover {
             transform: translateY(-6px);
-            border-color: rgba(245, 158, 11, 0.3);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            border-color: rgba(245, 158, 11, 0.4);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
         }
 
         .hotel-stars {
@@ -2093,9 +2100,9 @@
         }
 
         .contact-card {
-            background: rgba(10, 14, 23, 0.85);
+            background: rgba(10, 14, 23, 0.95);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 20px;
             padding: 32px;
             display: flex;
@@ -2199,9 +2206,9 @@
    FORMS
    ============================================ */
         .form-wrapper {
-            background: rgba(10, 14, 23, 0.85);
+            background: rgba(10, 14, 23, 0.95);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 24px;
             padding: 48px;
         }
@@ -2231,8 +2238,8 @@
             width: 100%;
             padding: 16px 20px;
             border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            background: rgba(10, 14, 23, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            background: rgba(10, 14, 23, 0.95);
             color: var(--white);
             font-family: 'Inter', sans-serif;
             font-size: 15px;
